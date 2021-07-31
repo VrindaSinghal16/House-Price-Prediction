@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{{url_for('static',filename='style3.css')}}" />
+
+  <!-- Custom CSS-->
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+
+
+   <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='favicon.png')}}" />
+
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Bangalore Home Price Prediction</title>
+
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+</script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <img src="https://freepngimg.com/download/india/67097-swachh-government-house-of-india-abhiyan-county.png"
+           alt="" width="50 height=" 50 class="d-inline-block align-text-middle">
+      CodingMusketeers
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url_for('index')}}">Predict</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('about')}}">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Quick Links
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{{url_for('team')}}">Our Team</a></li>
+            <li><a class="dropdown-item" href="{{url_for('mentors')}}">Mentors</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="{{url_for('contact')}}">Contact Us</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+  <img src="https://www.luxuryvillasstay.com/wp-content/uploads/2020/09/lux1.jpg"
+       alt="hieght = " auto width="100% class=" d-inline-block align-text-middle">
+
+
+<h1 style="text-align:center;">Welcome to CodingMusketeers</h1>
+<style data-emotion-css="1pg1k24">.css-1pg1k24{font-size:14px;color:#7f7f7f;text-align:center;line-height:32px;width:720px;margin:auto;}@media (max-width:1099px)
+{.css-1pg1k24{padding:0 16px;line-height:21px;width:100%;}}</style>
+<div class="css-1pg1k24">We are the fastest growing company in the online real estate space. Born out of the need to simplify the search for a home,
+    free of fake listings and endless site visits, we created a unique property search platform that filled the gaps left by others in the market.
+    Led by passionate problem-solvers, and backed by top investors from around the world, we are poised to become the most trusted place to find a home in India.</div>
+<div class="css-bym33j">
+    <h2 style="text-align:center;">Our Vision</h2>
+    <div class="css-1pg1k24">Delivering trustworthy experiences that you cherish for a lifetime.</div></div>
+<div class="css-bym33j"><h2 style="text-align:center;" class="css-zwtjq2">Our Mission</h2>
+    <div class="css-1pg1k24">To be the first choice for our consumers and partners in their journey of discovering, renting, buying, selling and financing a home.
+        We do that with data, design, technology, and above all the passion of our people, while delivering value to our shareholders.</div></div>
+<div class="css-bym33j"><h2 style="text-align:center;" class="css-zwtjq2">The most assured prediction</h2>
+    <div class="css-1pg1k24">Buying, Selling, Renting, or moving into a house can be a trial by fire,
+        especially in India where we often take the hassles involved in the process as an integral part of the home purchase process.
+        Our new idea for Vrriul Prediction questions that behaviour, and motivates them to switch to a hassle-free experience. <br></div>
+</div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-content">
+
+      <div class="footer-section about">
+        <h1 class="logo-text"><span>Coding</span>Musketeers</h1>
+        <p>
+          We at codingmusketeers design and build fully accurate AI model to help you make your work easy , accurate and hasslefree.
+          Feel free to contact us as we are happy to help you. <br> Happy Coding&#128151;
+        </p>
+        <div class="contact">
+          <span class="logo-text"><i class="fa fa-phone" aria-hidden="true"></i>123-456-789</span>
+          <span class="logo-text"> <i class="fa fa-envelope-o" aria-hidden="true"></i> vrindasinghal196@gmail.com</span>
+        </div>
+        <div class="socials">
+          <a style="color:#1877f2;" href=" https://www.linkedin.com/in/vrinda-singhal-03910a198" class="fa fa-facebook"></a>
+          <a style="color:#E1306C;" href=" https://www.linkedin.com/in/vrinda-singhal-03910a198" class="fa fa-instagram"></a>
+          <a style="color:#00acee;" href=" https://www.linkedin.com/in/vrinda-singhal-03910a198" class="fa fa-twitter"></a>
+          <a style="color:#0077b5;" href=" https://www.linkedin.com/in/vrinda-singhal-03910a198" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <br>
+        <ul>
+          <a style="text-decoration:none" href="{{url_for('about')}}">
+            <li style="color:white;" >About Us</li>
+          </a>
+          <a style="text-decoration:none" href="{{url_for('team')}}">
+            <li style="color:white;">Our Team</li>
+          </a>
+          <a style="text-decoration:none" href="{{url_for('mentors')}}">
+            <li style="color:white;">Mentors</li>
+          </a>
+          <a style="text-decoration:none" href="{{url_for('contact')}}">
+            <li style="color:white;">Contact Us</li>
+          </a>
+        </ul>
+      </div>
+
+
+
+    </div>
+    <div class="footer-bottom">
+      &copy; codingmusketeers.com | Designed by Team Vrriul
+    </div>
+  </div>
+  <!-- // footer -->
+
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  color: #fffdfb;
+}
+
+html, body {
+  min-height: 100%;
+  background: url('https://media.istockphoto.com/photos/machine-learning-hands-of-robot-and-human-touching-on-big-data-picture-id1206796363?b=1&k=6&m=1206796363&s=170667a&w=0&h=B7QlnUwtzSAibA3PDCvJ0LlYPUqYBGTH_umZ3ouVwNo=');
+  background-repeat: no-repeat;
+        background-size: auto;
+        background-size: 100% 100%;
+  border:none
+}
+
+
+li {
+  list-style: none;
+}
+
+
+/* style member component */
+.list-members {
+
+  width: 80%;
+  margin: 4% auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p{
+font-size: 25px;
+}
+.member {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.member-image {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.member-image:hover img {
+  transform: scale(1.1);
+}
+
+.member-info {
+  width: 50%;
+  text-align: center;
+}
+
+.member-info p {
+  margin: 20px 0;
+}
+
+
+/* style social link */
+.social-link .fa {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 7px;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+.social-link .fab:hover {
+  background: #000;
+  color: #ffe501;
+  transform: translateY(-7px);
+}
+
+/* Style all font awesome icons */
+.fa {
+  font-size: 30px;
+  color: white;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transform:translateY(-7px);
+}
+
+.fa-facebook {
+  color: white;
+  background: #cbd9e6
+}
+
+.fa-twitter {
+  color: white;
+  background: #cbd9e6;
+}
+
+.fa-linkedin {
+  color: white;
+  background: #fdfdfd;
+}
+
+.fa-instagram {
+  color: white;
+  background: antiquewhite;
+}
+
+.social-link fa{
+  color: white;
+}
+
+/* Membuat segitiga */
+.member-image::after {
+  content: '';
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #ffe501;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+
+/* Merubah posisi member-image dengan member-info */
+@media screen and (min-width: 771px) {
+  .member:nth-child(4n+3) .member-info,
+  .member:nth-child(4n+4) .member-info {
+    order: 1;
+  }
+  .member:nth-child(4n+3) .member-image,
+  .member:nth-child(4n+4) .member-image {
+    order: 2;
+  }
+
+  /* Merubah posisi sigitiga pada baris genap */
+  .member:nth-child(4n+3) .member-image::after,
+  .member:nth-child(4n+4) .member-image::after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotateZ(180deg);
+  }
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 770px) {
+  .list-members {
+    width: 95%;
+  }
+  .member {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
+  .social-link .fab {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .member:nth-child(even) .member-info {
+    order: 1;
+  }
+  .member:nth-child(even) .member-image {
+    order: 2;
+  }
+
+  /* Merubah posisi sigitiga elemen genap */
+  .member:nth-child(even) .member-image::after {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) rotateZ(180deg);
+  }
+}

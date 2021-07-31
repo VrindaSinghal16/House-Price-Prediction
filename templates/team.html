@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+   <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{url_for('static',filename='favicon.png')}}" />
+
+    <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS-->
+        <link rel="stylesheet" href="{{url_for('static',filename='team.css')}}" />
+
+
+
+    <title>Our Team</title>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <img src="https://freepngimg.com/download/india/67097-swachh-government-house-of-india-abhiyan-county.png"
+           alt="" width="50 height=" 50 class="d-inline-block align-text-middle">
+      CodingMusketeers
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('mentors')}}">Mentors</a>
+        </li>
+
+       <li class="nav-item">
+          <a class="nav-link" href="{{url_for('contact')}}">Contact Us
+          </a>
+       </li>
+
+      </ul>
+      <a class="navbar-brand" href="#">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/000/350/666/small/R_letter_logo.jpg"
+           alt="" width="50 height=" 50 class="d-inline-block align-text-middle">
+    </a>
+    </div>
+  </div>
+</nav>
+<ul class="list-members">
+  <li class="member">
+    <div class="member-image">
+      <img src="{{url_for('static',filename='ceo.jpg')}}">
+    </div>
+    <div class="member-info">
+      <h3>Vrinda Singhal</h3>
+      <h6>Founder & CEO (AI Developer)</h6>
+      <div class="social-link">
+        <a style="color:#1877f2;" href="#" class="fa fa-facebook"></a>
+          <a style="color:#E1306C;" href="#" class="fa fa-instagram"></a>
+          <a style="color:#00acee;" href="#" class="fa fa-twitter"></a>
+          <a style="color:#0077b5;" href=" https://www.linkedin.com/in/vrinda-singhal-03910a198" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="{{url_for('static',filename='P.jpg')}}">
+    </div>
+    <div class="member-info">
+      <h3>Parul</h3>
+      <h6>Company Manager</h6>
+      <div class="social-link">
+        <a style="color:#1877f2;" href="#" class="fa fa-facebook"></a>
+          <a style="color:#E1306C;" href="#" class="fa fa-instagram"></a>
+          <a style="color:#00acee;" href="#" class="fa fa-twitter"></a>
+          <a style="color:#0077b5;" href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="{{url_for('static',filename='R.jpg')}}">
+    </div>
+    <div class="member-info">
+      <h3>Ritika Goyal</h3>
+      <h6>Marketing Head</h6>
+      <div class="social-link">
+        <a style="color:#1877f2;" href="#" class="fa fa-facebook"></a>
+          <a style="color:#E1306C;" href="#" class="fa fa-instagram"></a>
+          <a style="color:#00acee;" href="#" class="fa fa-twitter"></a>
+          <a style="color:#0077b5;" href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div><li class="member">
+    <div class="member-image">
+      <img src="{{url_for('static',filename='ams.jpg')}}">
+    </div>
+    <div class="member-info">
+      <h3>Amit Sarraf</h3>
+      <h6>Full Stack Developer</h6>
+      <div class="social-link">
+        <a style="color:#1877f2;" href="#" class="fa fa-facebook"></a>
+          <a style="color:#E1306C;" href="#" class="fa fa-instagram"></a>
+          <a style="color:#00acee;" href="#" class="fa fa-twitter"></a>
+          <a style="color:#0077b5;" href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div><li class="member">
+    <div class="member-image">
+      <img src="{{url_for('static',filename='kk.png')}}">
+    </div>
+    <div class="member-info">
+      <h3>Kartik Kohli</h3>
+      <h6>Backend Developer</h6>
+      <div class="social-link">
+        <a style="color:#1877f2;" href="#" class="fa fa-facebook"></a>
+          <a style="color:#E1306C;" href="#" class="fa fa-instagram"></a>
+          <a style="color:#00acee;" href="#" class="fa fa-twitter"></a>
+          <a style="color:#0077b5;" href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div><li class="member">
+    <div class="member-image">
+      <img src="{{url_for('static',filename='aks.jpg')}}">
+    </div>
+    <div class="member-info">
+      <h3>Akansh Singhal</h3>
+      <h6>Frontend Developer</h6>
+      <div class="social-link">
+        <a style="color:#1877f2;" href="#" class="fa fa-facebook"></a>
+          <a style="color:#E1306C;" href="#" class="fa fa-instagram"></a>
+          <a style="color:#00acee;" href="#" class="fa fa-twitter"></a>
+          <a style="color:#0077b5;" href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+
+</ul>
+<style>
+            .footer {
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              background-color: #333333;
+              color: #686868;
+              text-align: center;
+              font-size: 15px;
+              padding: 10px;
+        </style>
+        <div class="footer">
+            <p> &copy; codingmusketeers.com | Designed by Team Vrriul</p>
+        </div>
+</body>
+</html>
